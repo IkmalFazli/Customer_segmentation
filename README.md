@@ -5,35 +5,25 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 
 # Customer_segmentation_using_Deep_Learning
+The bank's revenue has recently decreased, and an examination has been done to determine the cause of the issue. The bank discovered that the decline in client deposits of money into the bank is the primary cause of the decrease in revenue. As a result, the bank made the decision to launch marketing initiatives to encourage more customers to make deposits. Gathering client demands and general satisfaction is the goal of marketing campaigns. The consumer segmentation, promotional strategy, and other key components of the marketing campaign are among its key components. The revenue of the bank could increase and increase with a well determined plan.
 
+
+Our focus here is to create a deep learning model to forecast the campaign's outcome based on the segmentation dataset thst comes with few features.
 
 # Results
-After :
+The architecture of our model is such below:
+
+![model](model_plot.png)
 
 
-![model_acc](model_accuracy.png) 
+Upon our studies, we found out that we can get better accuracy with all the features been selected. Hence we skip the future selection step in this case.
+This model accuracy were as high as 91%. Hence it is suggested that this model to be used for future prediction.
+
+![model_acc](Result.PNG) 
 
 
-Referring to the result it is clear that Logistic Regression with MinMax 
-scaler has the highest score which is 0.835. Hence we pick model to best 
-tested further to find the best parameter.As the result for gridsearch parameter, 
-we found out that the default parameter is the best parameter for this case. 
-Hence we save the model for deployment.
-
-To further check the model we test model using our test data send. Below is the 
-classification report and confusion matrix:
-
-![class_report](classification_report.png)
-
-
-![conf_mat](confusion_matrix.png)
-
-# Web apps
-To check on my web app, you can download file app.py and run using streamlit. Below is the screenshot of my web app:
-
-![webapp](webapp.png)
 
 # Credit
 
-1) Data sets : [Here](https://www.kaggle.com/rashikrahmanpritom/heart-attack-analysis-prediction-dataset)
-2) Webapps Image : [Here](https://images.news18.com/ibnlive/uploads/2022/01/heart-health-16430292883x2.jpg?impolicy=website&width=510&height=356)
+Data sets : [Here](https://www.kaggle.com/datasets/kunalgupta2616/hackerearth-customer-segmentation-hackathon)
+
