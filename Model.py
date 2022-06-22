@@ -42,10 +42,10 @@ continuous_columns = ['customer_age','balance','last_contact_duration',
                       'num_contacts_in_campaign','num_contacts_prev_campaign']
 
 # EDA
-#%% Step 1- Data Loading
+"""Step 1- Data Loading"""
 df = pd.read_csv(DATA_TRAIN_PATH)
 
-#%% Step 2- Data Inspection
+""" Step 2- Data Inspection """
 df.head(10)
 df.tail(10)
 df.info() # check for null and can check which column is categorical
@@ -71,7 +71,7 @@ df.groupby(['marital','term_deposit_subscribed']).agg(
 df.groupby(['term_deposit_subscribed','education','job_type','marital']).agg(
     {'term_deposit_subscribed':'count'})
 
-"""# STEP 3) DATA CLEANING
+""" STEP 3) DATA CLEANING
 - drop id
 - no duplicated
 - drop days_since_prev_campaign_contact because to many null."""
@@ -104,7 +104,13 @@ df_backup1.describe().T
 
 df.describe().T
 
-# Step 5- Preprocessing --> OHE/Label Encoder
+# KNN imputer were chosen in this case
+
+"""Step 4 Features selection
+       we skip this step since the model can perform better with all feature
+       being selected """
+
+""" Step 5- Preprocessing --> OHE/Label Encoder"""
 X = df.drop(labels=['term_deposit_subscribed'],axis=1)
 y = df['term_deposit_subscribed']
 
