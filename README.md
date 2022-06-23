@@ -2,6 +2,8 @@
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Tensorflow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)
 
 # Customer_segmentation_using_Deep_Learning
 The bank's revenue has recently decreased, and an examination has been done to determine the cause of the issue. The bank discovered that the decline in client deposits of money into the bank is the primary cause of the decrease in revenue. As a result, the bank made the decision to launch marketing initiatives to encourage more customers to make deposits. Gathering client demands and general satisfaction is the goal of marketing campaigns. The consumer segmentation, promotional strategy, and other key components of the marketing campaign are among its key components. The revenue of the bank could increase and increase with a well determined plan.
